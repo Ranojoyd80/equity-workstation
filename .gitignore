@@ -1,0 +1,35 @@
+# --- Secrets & personal data (never commit) ---
+.env
+.env.*
+!.env.example
+data/**
+!data/**/
+!data/**/.gitkeep
+*.csv
+*.xlsx
+*.db
+*.sqlite
+*.duckdb
+*.parquet
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# --- Node ---
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# --- Editors / OS ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
